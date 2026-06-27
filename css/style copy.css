@@ -1,0 +1,378 @@
+:root{
+    --color-primary: #a52a2a;
+    --color-secondary: #808080;
+    --color-white: #ffffff;
+    --color-light: #e2e2e2;
+    --color-black: #000;
+    --color-dark: #111;
+
+    /* Dark Mode Color */
+
+    /* --color-white: #333333;
+    --color-light: gray;
+    --color-black: #fff;
+    --color-dark: whitesmoke;
+    --color-secondary: #d3d3d3; */
+}
+/* --------------- General Style ---------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--color-white);
+    color: var(--color-black);
+    scroll-behavior: smooth;
+}
+.container-fluid-1{
+    width: 100%;
+    padding: 4rem 15%;
+}
+.container-fluid-2{
+    width: 100%;
+    padding: 4rem 10%;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text-center{text-align: center;}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul li{
+    list-style: none;
+}
+.btn{
+    padding: .5rem 1.2rem;
+    border: 1px solid var(--color-black);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn-primary{
+    background: var(--color-primary);
+    color: #ffffff;
+    transition: .3s ease-in;
+}
+.btn-primary:hover{
+    background: rgb(143, 37, 37);
+}
+.btn-secondary{
+    background: transparent;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    transition: .4s ease-in;
+}
+.btn-secondary:hover{
+    background: whitesmoke;
+}
+.h2{
+    font-size: 1.7rem;
+    font-family:  Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+}
+/* --------------------------------- Header Style ---------------------------------- */
+header{
+    width: 100%;
+    padding: 1rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color-white);
+    position: fixed;
+    top: 0; left: 0;
+    box-shadow: -5px 5px 5px -1px rgba(112, 112, 112, 0.86);
+}
+header h2 a{
+    font-family: tahoma;
+    color: var(--color-dark);
+}
+header .menu-toggler{
+    background: none;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    z-index: 999;
+    display: none;
+}
+header .menu-toggler span{
+    display: block;
+    height: 3px;
+    background: var(--color-secondary);
+    margin: 6px 0;
+    position: relative;
+    transition: .3s ease-in-out;
+}
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+header .navbar ul li a{
+    font-size: 1.2rem;
+}
+header .navbar ul li a i{
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+/* --------------------------------- Body ---------------------------------- */
+main{
+    width: 100%;
+    padding-top: 4rem;
+}
+/* ----------------------- Intro Style -------------------------- */
+.intro{
+    width: 100%;
+    height: 80vh;
+    background: var(--color-light);
+    padding: 6rem 0;
+}
+.intro-wrapper{
+    margin: 0 15%;
+}
+.intro-wrapper .intro-left h2{
+    font-size: 1.5rem;
+    color: rgb(85, 85, 85);
+}
+.intro-wrapper .intro-left h1{
+    font-size: 2.3rem;
+    font-family: gothic corbel, tahoma;
+    padding: .5rem 0;
+}
+.resume-btn:hover{
+    background: var(--color-primary);
+    color: var(--color-light);
+}
+.intro-wrapper .intro-left p{
+    width: 350px;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.intro-wrapper .intro-left p::after{
+    content: "A Frontend Website Developer";
+    animation: textanim 10s linear infinite;
+}
+@keyframes textanim{
+    25%{
+        content: "A Frontend Website Developer";
+    }
+    50%{
+        content: "A Frontend Web App Developer";
+    }
+    75%{
+        content: "A Frontend Website Developer";
+    }
+    100%{
+        content: "A Frontend Web App Developer";
+    }
+}
+.buttons-div{
+    margin: 2rem 0;
+}
+.social-links a{
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    color: var(--color-primary);
+}
+.intro-right img{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 50%;
+}
+/* ----------------------- About Style -------------------------- */
+.about{
+    background: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+}
+.about-left{
+    width: 10%;
+}
+.about-left img{
+    width: 200px;
+}
+.about-right{
+    width: 70%;
+}
+.about-right p{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    font-family: sans-serif, Arial, Helvetica;
+    color: var(--color-dark);
+    text-align: justify;
+    line-height: 1.7rem;
+}
+/* ----------------------- Services Style -------------------------- */
+.services{
+    background: var(--color-light);
+}
+.services h2{
+    margin-bottom: 1rem;
+}
+.service-wrapper{
+    margin: 2rem 0;
+    width: 100%;
+}
+.service-wrapper .box{
+    width: 25%;
+    min-height: 14rem;
+    background: var(--color-white);
+    padding: 2rem 1rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: -5px 5px 5px -1px rgba(112, 112, 112, 0.86);
+}
+.service-wrapper .box i{
+    font-size: 1.5rem;
+}
+.service-wrapper .box h5{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+.service-wrapper .box p{
+    font-size: 1rem;
+    font-family: sans-serif, Arial, Helvetica;
+    line-height: 1.5rem;
+}
+/* ----------------------- Project Style -------------------------- */
+.projects{
+    background: var(--color-light);
+}
+.projects h2{
+    margin-bottom: 1rem;
+}
+.project-wrapper{
+    width: 100%;
+    height: fit-content;
+    padding-bottom: .5rem;
+    gap: 2rem;
+    margin: 2rem 0;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+}
+.project-wrapper::-webkit-scrollbar{display: none;}
+.project-wrapper .box{
+    min-width: 300px;
+    height: 24rem;
+    text-align: center;
+    padding: 1rem;
+    background: var(--color-white);
+    box-shadow: -5px 5px 5px -1px rgba(143, 143, 143, 0.86);
+    border-radius: 5px;
+}
+.project-wrapper .box img{
+    width: 100%;
+    border: 1px solid var(--color-secondary);
+}
+.project-wrapper .box h3{
+    margin: 1rem 0;
+}
+.project-wrapper .box p{
+    margin-bottom: 2rem;
+    height: fit-content;
+    min-height: 5rem;
+}
+.action-btn a:last-child{
+    margin-left: 2rem;
+}
+/* ----------------------- Skills Style -------------------------- */
+.skills{
+    background: var(--color-white);
+}
+.skill-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.skill-wrapper .box{
+    text-align: center;
+    width: 18%;
+    padding: .5rem 0;
+}
+.skill-wrapper .box img{
+    width: 95%;
+    max-height: 10rem;
+}
+.skill-wrapper .box p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #7c7c7c;
+}
+/* ----------------------- Certifications Style -------------------------- */
+.certifications{
+    background: var(--color-light);
+}
+.certifications-wrapper{
+    margin-top: 2.5rem;
+}
+.certifications-wrapper .box{
+    width: 22%;
+}
+.certifications-wrapper .box img{
+    width: 100%;
+}
+/* ----------------------- Contact Style -------------------------- */
+.contact{
+    background: var(--color-white);
+}
+.contact-wrapper{
+    margin-top: 2rem;
+}
+.contact-left{
+    width: 50%;
+    padding: 1rem 2rem;
+}
+.contact-left img{
+    width: 200px;
+    margin-bottom: 1rem;
+}
+.contact-right{
+    width: 50%;
+    padding: 2rem 1rem;
+    background: var(--color-light);
+    box-shadow: -5px 5px 5px -1px rgba(121, 121, 121, 0.644);
+}
+.contact-right .form-wrapper input{
+    width: 100%;
+    padding: .6rem 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    
+}
+.contact-right .form-wrapper input[type="text"],
+.contact-right .form-wrapper input[type="email"]{
+    border-bottom: 1px solid #000;
+    margin-bottom: 1.2rem;
+}
+.contact-right .form-wrapper textarea{
+    width: 100%;
+    margin-bottom: 1.2rem;
+    padding: .6rem 1rem;
+    outline: none;
+    border: none;
+    resize: none;
+    border-bottom: 1px solid #000;
+}
+/* ----------------------- Footer Style -------------------------- */
+footer{
+    background: var(--color-dark);
+    color: var(--color-white);
+    font-family: corbel;
+    font-size: 1.2rem;
+    padding: 1.5rem 0;
+    text-align: center;
+}
