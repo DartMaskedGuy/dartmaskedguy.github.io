@@ -36,11 +36,11 @@ mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => 
 //   e.preventDefault();
 //   alert('Add your resume PDF and point this button at it — e.g. /resume.pdf');
 // });
-document.getElementById('contactForm').addEventListener('submit', (e) => {
-  e.preventDefault();
-  const status = document.getElementById('formStatus');
-  status.textContent = 'Message ready — connect this form to your email service or a form backend to send it.';
-});
+// document.getElementById('contactForm').addEventListener('submit', (e) => {
+//   e.preventDefault();
+//   const status = document.getElementById('formStatus');
+//   status.textContent = 'Message ready — connect this form to your email service or a form backend to send it.';
+// });
 
 /* ============================= TYPEWRITER ============================= */
 const roles = ['Flutter Developer.', 'Cross Platform Developer.', 'Mobile Architect.', 'Fintech Engineer.', 'VR/AR Enthusiast.'];
