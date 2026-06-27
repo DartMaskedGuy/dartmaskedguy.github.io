@@ -32,10 +32,10 @@ hamburger.addEventListener('click', () => mobileMenu.classList.toggle('open'));
 mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.remove('open')));
 
 /* ============================= RESUME / FORM (no backend — graceful placeholders) ============================= */
-document.getElementById('downloadResume').addEventListener('click', (e) => {
-  e.preventDefault();
-  alert('Add your resume PDF and point this button at it — e.g. /resume.pdf');
-});
+// document.getElementById('downloadResume').addEventListener('click', (e) => {
+//   e.preventDefault();
+//   alert('Add your resume PDF and point this button at it — e.g. /resume.pdf');
+// });
 document.getElementById('contactForm').addEventListener('submit', (e) => {
   e.preventDefault();
   const status = document.getElementById('formStatus');
