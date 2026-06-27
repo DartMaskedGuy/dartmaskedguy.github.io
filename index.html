@@ -1,386 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flutter Developer — Mobile Application Engineer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <!-- Favicon -->
-  <link href="img/favicon.ico" rel="icon">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flutter Developer — Mobile Application Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link href="assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
 
-<!-- LOADER -->
-<div id="loader">
-  <div class="loader-mark">&lt;/&gt; building experience</div>
-  <div class="loader-bar"><i></i></div>
-  <div class="loader-sub">flutter pub get &nbsp;→&nbsp; compiling UI</div>
-</div>
-
-<div id="progressBar"></div>
-<div class="grid-bg"></div>
-<canvas id="particles-canvas"></canvas>
-<div id="floatingIcons"></div>
-<div id="cursorGlow"></div>
-
-<!-- NAVBAR -->
-<header class="navbar">
-  <div class="nav-inner glass">
-    <a href="#hero" class="logo"><span class="tag">&lt;/&gt;</span> DartMaskedGuy</a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="nav-cta">
-      <button class="btn-resume magnetic" id="resumeBtn">
-        <a href="Olatona Moyinoluwa - Resume.pdf" target="_blank" download>Resume</a>
-      </button>
-      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
-    </div>
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-mark">&lt;/&gt; building experience</div>
+    <div class="loader-bar"><i></i></div>
+    <div class="loader-sub">flutter pub get &nbsp;→&nbsp; compiling UI</div>
   </div>
-</header>
-<div class="mobile-menu glass-strong" id="mobileMenu">
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#experience">Experience</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
-</div>
 
-<main>
+  <div id="progressBar"></div>
+  <div class="grid-bg"></div>
+  <canvas id="particles-canvas"></canvas>
+  <div id="floatingIcons"></div>
+  <div id="cursorGlow"></div>
 
-<!-- HERO -->
-<section id="hero">
-  <div class="wrap hero-grid">
-    <div class="hero-copy">
-      <div class="hero-eyebrow glass"><span class="pulse"></span> Available for new opportunities</div>
-      <h1 class="reveal">Moyinoluwa Olatona —<br><span class="grad">Mobile</span><br>Application Developer</h1>
-      <div class="hero-role reveal">
-        <span class="static">I am a</span><span id="typewriter"></span>
-      </div>
-      <p class="lede reveal">4 years shipping production Flutter apps across fintech, logistics, ed-tech and live-entertainment — real-time systems, payment rails, and pixel-careful UI, end to end from architecture to Play Store.</p>
-      <div class="hero-ctas reveal">
-        <a href="#projects" class="btn btn-primary magnetic">View Projects →</a>
-        <a href="Olatona Moyinoluwa - Resume.pdf" id="downloadResume" class="btn btn-ghost glass magnetic" download>Download Resume</a>
-        <a href="#contact" class="btn btn-ghost glass magnetic">Contact Me</a>
-      </div>
-      <div class="hero-stats reveal">
-        <div class="stat"><b>4+</b><span>YEARS EXPERIENCE</span></div>
-        <div class="stat"><b>3+</b><span>APPS SHIPPED</span></div>
-        <div class="stat"><b>3</b><span>INDUSTRIES</span></div>
-        <div class="stat"><b>100%</b><span>BLOC ARCHITECTURE</span></div>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-inner glass">
+      <a href="#hero" class="logo"><span class="tag">&lt;/&gt;</span> DartMaskedGuy</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <button class="btn-resume magnetic" id="resumeBtn">
+          <a href="Olatona Moyinoluwa - Resume.pdf" target="_blank" download>Resume</a>
+        </button>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
       </div>
     </div>
+  </header>
+  <div class="mobile-menu glass-strong" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
 
-    <div class="phone-stage reveal">
-      <div class="phone-glow"></div>
-      <div class="float-chip c1 glass mono"><span class="dot"></span>WS: connected</div>
-      <div class="float-chip c2 glass mono"><span class="dot"></span>Build passing</div>
-      <div class="phone">
-        <div class="phone-notch"></div>
-        <div class="phone-screen">
-          <div class="app-statusbar"><span>9:41</span><span>●●● ▮▮▮</span></div>
-          <div class="app-head">
-            <span class="live"><i></i>LIVE SESSION</span>
-            <div class="app-title">Round 4 of 10</div>
-            <div class="app-sub">42,381 players online</div>
+  <main>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <div class="hero-eyebrow glass"><span class="pulse"></span> Available for new opportunities</div>
+        <h1 class="reveal">Moyinoluwa Olatona —<br><span class="grad">Mobile</span><br>Application Developer</h1>
+        <div class="hero-role reveal">
+          <span class="static">I am a</span><span id="typewriter"></span>
+        </div>
+        <p class="lede reveal">4 years shipping production Flutter apps across fintech, logistics, ed-tech and live-entertainment — real-time systems, payment rails, and pixel-careful UI, end to end from architecture to Play Store.</p>
+        <div class="hero-ctas reveal">
+          <a href="#projects" class="btn btn-primary magnetic">View Projects →</a>
+          <a href="Olatona Moyinoluwa - Resume.pdf" id="downloadResume" class="btn btn-ghost glass magnetic" download>Download Resume</a>
+          <a href="#contact" class="btn btn-ghost glass magnetic">Contact Me</a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat"><b>4+</b><span>YEARS EXPERIENCE</span></div>
+          <div class="stat"><b>3+</b><span>APPS SHIPPED</span></div>
+          <div class="stat"><b>3</b><span>INDUSTRIES</span></div>
+          <div class="stat"><b>100%</b><span>BLOC ARCHITECTURE</span></div>
+        </div>
+      </div>
+
+      <div class="phone-stage reveal">
+        <div class="phone-glow"></div>
+        <div class="float-chip c1 glass mono"><span class="dot"></span>WS: connected</div>
+        <div class="float-chip c2 glass mono"><span class="dot"></span>Build passing</div>
+        <div class="phone">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="app-statusbar"><span>9:41</span><span>●●● ▮▮▮</span></div>
+            <div class="app-head">
+              <span class="live"><i></i>LIVE SESSION</span>
+              <div class="app-title">Round 4 of 10</div>
+              <div class="app-sub">42,381 players online</div>
+            </div>
+            <div class="ring-wrap">
+              <div class="ring">
+                <svg width="110" height="110"><circle class="bg" cx="55" cy="55" r="47"/><circle class="fg" cx="55" cy="55" r="47"/></svg>
+                <div class="num">08</div>
+              </div>
+            </div>
+            <div class="q-card">
+              <div class="qtext">Which widget rebuilds only the part of the tree that changed?</div>
+              <div class="opt a"><div class="fill"></div><span>BlocBuilder</span><span>72%</span></div>
+              <div class="opt b"><div class="fill"></div><span>StatefulWidget</span><span>18%</span></div>
+              <div class="opt c"><div class="fill"></div><span>InheritedWidget</span><span>10%</span></div>
+            </div>
+            <div class="nav-pills"><i class="active"></i><i></i><i></i><i></i></div>
           </div>
-          <div class="ring-wrap">
-            <div class="ring">
-              <svg width="110" height="110"><circle class="bg" cx="55" cy="55" r="47"/><circle class="fg" cx="55" cy="55" r="47"/></svg>
-              <div class="num">08</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="divider"><span class="dot"></span></div></div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <div class="eyebrow reveal">01 · About</div>
+      <h2 class="sec-title reveal">Engineering reliable, beautiful mobile<br>experiences for the real world.</h2>
+      <div class="about-grid" style="margin-top:50px;">
+        <div class="about-text reveal">
+          <p>I'm a <strong>Mid-level Flutter Developer</strong> with over four years of experience designing and shipping cross-platform mobile applications for the Nigerian consumer market — from <strong>live, real-time game shows</strong> watched by tens of thousands of concurrent players, to <strong>courier and logistics platforms</strong> coordinating riders across cities in real time.</p>
+          <p>My work sits at the intersection of clean architecture and high-stakes reliability: WebSocket event streams that can't drop a beat, payment flows that have to be airtight, and HLS video pipelines that need to feel instant. I lead with <strong>BLoC state management</strong>, deliberate component decomposition, and a strong bias toward minimal dependencies.</p>
+          <p>Lately I've been pulling that same rigor into <strong>VR/AR experimentation</strong> — exploring where spatial computing and real-time mobile architecture meet, with an eye on founding something of my own in that space.</p>
+          <div class="stat-grid">
+            <div class="stat-card glass"><b>4+</b><span>Years in Flutter & Dart</span></div>
+            <div class="stat-card glass"><b>40K+</b><span>Concurrent users handled live</span></div>
+            <div class="stat-card glass"><b>3</b><span>Payment integrations shipped</span></div>
+            <div class="stat-card glass"><b>0</b><span>State-mgmt deps beyond BLoC</span></div>
+          </div>
+        </div>
+        <div class="highlight-list reveal">
+          <div class="highlight-card glass"><div class="ic">RT</div><div><h4>Real-time systems at scale</h4><p>Designed sealed-class event hierarchies over Ably WebSockets to drive live trivia sessions — timers, push questions, leaderboards — with payload normalization for resilience.</p></div></div>
+          <div class="highlight-card glass"><div class="ic">₦</div><div><h4>Fintech-grade payments</h4><p>Built end-to-end checkout flows with the Paystack SDK and BLoC, from ticket configuration through verification, handling edge cases other teams miss.</p></div></div>
+          <div class="highlight-card glass"><div class="ic">▶</div><div><h4>Live video, zero buffering anxiety</h4><p>Fixed HLS buffer residue on player init and built a retry/polling state machine around better_player, so a live stream always recovers gracefully.</p></div></div>
+          <div class="highlight-card glass"><div class="ic">UI</div><div><h4>Design-literate engineering</h4><p>Comfortable owning UI from concept to pixel — glassmorphic surfaces, custom painters, and staggered animations that feel premium, not generic.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="divider"><span class="dot"></span></div></div>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="eyebrow reveal">02 · Skills</div>
+      <h2 class="sec-title reveal">A toolkit built for shipping, not<br>just demoing.</h2>
+      <p class="sec-sub reveal">Depth where it matters: state management, real-time infrastructure, and the unglamorous delivery pipeline that gets an app into someone's pocket.</p>
+
+      <div class="skill-groups" style="margin-top:50px;">
+        <div class="reveal">
+          <span class="skill-group-label">Core & Architecture</span>
+          <div class="skill-grid">
+            <div class="skill-card glass"><div class="sic">{ }</div><h4>Flutter</h4><p>Production apps across fintech, logistics & ed-tech, phone to tablet.</p></div>
+            <div class="skill-card glass"><div class="sic">Dart</div><h4>Dart</h4><p>Sealed classes, null-safety, async streams used deliberately.</p></div>
+            <div class="skill-card glass"><div class="sic">⚙</div><h4>BLoC</h4><p>Predictable state across complex, multi-screen real-time flows.</p></div>
+            <div class="skill-card glass"><div class="sic">▣</div><h4>Clean Architecture</h4><p>Single-responsibility widgets, decomposed and testable.</p></div>
+          </div>
+        </div>
+        <div class="reveal">
+          <span class="skill-group-label">Backend & Realtime</span>
+          <div class="skill-grid">
+            <div class="skill-card glass"><div class="sic">↻</div><h4>Firebase</h4><p>Auth, Firestore & FCM push notifications at scale.</p></div>
+            <div class="skill-card glass"><div class="sic">⇄</div><h4>REST APIs</h4><p>Centralized Dio interceptors with typed error handling.</p></div>
+            <div class="skill-card glass"><div class="sic">⚡</div><h4>Realtime & Streaming</h4><p>Ably WebSockets and HLS live video with retry logic.</p></div>
+            <div class="skill-card glass"><div class="sic">₦</div><h4>Payment Integration</h4><p>Paystack checkout flows wired through BLoC end-to-end.</p></div>
+          </div>
+        </div>
+        <div class="reveal">
+          <span class="skill-group-label">Delivery & Extras</span>
+          <div class="skill-grid">
+            <div class="skill-card glass"><div class="sic">▲</div><h4>CI/CD</h4><p>Automated build, test & release pipelines.</p></div>
+            <div class="skill-card glass"><div class="sic">⚙</div><h4>GitHub Actions</h4><p>Flavor-aware builds via --dart-define, single main.dart.</p></div>
+            <div class="skill-card glass"><div class="sic">▶</div><h4>3D & Spatial UI</h4><p>Matrix4 transforms, custom painters, early VR/AR exploration.</p></div>
+            <div class="skill-card glass"><div class="sic">⇪</div><h4>Play Store Deployment</h4><p>Release management, staged rollouts, crash triage.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="divider"><span class="dot"></span></div></div>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="eyebrow reveal">03 · Experience</div>
+      <h2 class="sec-title reveal">Four years, three industries,<br>one architecture discipline.</h2>
+
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card glass">
+            <div class="tl-top"><span class="tl-role">Mid-level Flutter Developer</span><span class="tl-period mono">2025 — Present</span></div>
+            <div class="tl-company">Liberty Assured <span class="industry">FINTECH / LOGISTICS</span></div>
+            <ul class="tl-bullets">
+              <li>Built and maintain Salary for Life (The Hustle) application — a live interactive trivia game show with real-time sessions, HLS streaming and in-app payments. In conjuction with the Nigeria Popular TV show Salary for Life</li>
+              <li>Designed sealed SessionEvent hierarchies over Ably WebSockets handling push questions, timers and session recaps with payload normalization.</li>
+              <li>Shipped AX Rider, a courier/logistics app with live Google Maps tracking, Firebase FCM, and a centralized Dio error-handling layer.</li>
+              <li>Replaced a third-party walkthrough package with a custom spotlight CustomPainter overlay, cutting an external dependency entirely.</li>
+            </ul>
+            <div class="tl-tags"><span class="tag">Flutter</span><span class="tag">BLoC</span><span class="tag">Ably</span><span class="tag">Paystack</span><span class="tag">Firebase FCM</span><span class="tag">go_router</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card glass">
+            <div class="tl-top"><span class="tl-role">Mobile App Developer</span><span class="tl-period mono">2023 — 2025</span></div>
+            <div class="tl-company">Glimere <span class="industry">FASHION TECH</span></div>
+            <ul class="tl-bullets">
+              <li>Built core e-commerce flows — catalog, cart, checkout — with smooth, brand-led motion design.</li>
+              <li>Implemented image-heavy product browsing optimized for low-bandwidth conditions.</li>
+              <li>Worked closely with design to translate fashion-forward mockups into pixel-accurate Flutter UI.</li>
+            </ul>
+            <div class="tl-tags"><span class="tag">Flutter</span><span class="tag">setState</span><span class="tag">REST APIs</span><span class="tag">Animations</span></div>
+          </div>
+        </div>
+
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card glass">
+            <div class="tl-top"><span class="tl-role">Mobile App Developer</span><span class="tl-period mono">2021 — 2022</span></div>
+            <div class="tl-company">Smart Campus <span class="industry">ED-TECH</span></div>
+            <ul class="tl-bullets">
+              <li>Built student-facing modules for course tracking, timetables and campus announcements.</li>
+              <li>Introduced a centralized API error-handling pattern adopted across the codebase.</li>
+              <li>Owned UI for onboarding and notifications, focused on clarity for first-time smartphone users.</li>
+            </ul>
+            <div class="tl-tags"><span class="tag">Flutter</span><span class="tag">Firebase</span><span class="tag">Push Notifications</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="divider"><span class="dot"></span></div></div>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="eyebrow reveal">04 · Projects</div>
+      <h2 class="sec-title reveal">Shipped products, not side projects.</h2>
+      <p class="sec-sub reveal">A selection of production apps — each one solving a real constraint, not a tutorial-sized problem.</p>
+
+      <div class="proj-grid">
+        <div class="proj-card glass reveal">
+          <div class="proj-thumb" style="background:linear-gradient(135deg,#02569B,#0a2540);">
+            <span class="badge mono">LIVE</span>
+            <div class="mockbars"><div class="b short"></div><div class="card"></div></div>
+            <div class="mockbars">
+              <div class="b short"></div><div class="card">
+                <a href="img/salary4life.png" target="_blank"><img src="img/salary4life.png" alt="Salary for Life (The Hustle)"></a>
+              </div>
             </div>
           </div>
-          <div class="q-card">
-            <div class="qtext">Which widget rebuilds only the part of the tree that changed?</div>
-            <div class="opt a"><div class="fill"></div><span>BlocBuilder</span><span>72%</span></div>
-            <div class="opt b"><div class="fill"></div><span>StatefulWidget</span><span>18%</span></div>
-            <div class="opt c"><div class="fill"></div><span>InheritedWidget</span><span>10%</span></div>
+          <div class="proj-body">
+            <h4>Salary for Life (The Hustle)</h4>
+            <p>Real-time interactive trivia game show with synchronized timers, live leaderboards, HLS streaming and Paystack-powered ticket payments.</p>
+            <div class="proj-tags"><span class="tag">Flutter</span><span class="tag">BLoC</span><span class="tag">Ably</span><span class="tag">Paystack</span><span class="tag">Firebase</span></div>
+            <div class="proj-links"><a href="https://play.google.com/store/apps/details?id=com.salary4.life&pcampaignid=web_share" target="_blank">Playstore →</a><a href="#">AppStore →</a></div>
           </div>
-          <div class="nav-pills"><i class="active"></i><i></i><i></i><i></i></div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<div class="wrap"><div class="divider"><span class="dot"></span></div></div>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="wrap">
-    <div class="eyebrow reveal">01 · About</div>
-    <h2 class="sec-title reveal">Engineering reliable, beautiful mobile<br>experiences for the real world.</h2>
-    <div class="about-grid" style="margin-top:50px;">
-      <div class="about-text reveal">
-        <p>I'm a <strong>Mid-level Flutter Developer</strong> with over four years of experience designing and shipping cross-platform mobile applications for the Nigerian consumer market — from <strong>live, real-time game shows</strong> watched by tens of thousands of concurrent players, to <strong>courier and logistics platforms</strong> coordinating riders across cities in real time.</p>
-        <p>My work sits at the intersection of clean architecture and high-stakes reliability: WebSocket event streams that can't drop a beat, payment flows that have to be airtight, and HLS video pipelines that need to feel instant. I lead with <strong>BLoC state management</strong>, deliberate component decomposition, and a strong bias toward minimal dependencies.</p>
-        <p>Lately I've been pulling that same rigor into <strong>VR/AR experimentation</strong> — exploring where spatial computing and real-time mobile architecture meet, with an eye on founding something of my own in that space.</p>
-        <div class="stat-grid">
-          <div class="stat-card glass"><b>4+</b><span>Years in Flutter & Dart</span></div>
-          <div class="stat-card glass"><b>40K+</b><span>Concurrent users handled live</span></div>
-          <div class="stat-card glass"><b>3</b><span>Payment integrations shipped</span></div>
-          <div class="stat-card glass"><b>0</b><span>State-mgmt deps beyond BLoC</span></div>
+        <div class="proj-card glass reveal">
+          <div class="proj-thumb" style="background:linear-gradient(135deg,#0175C2,#0a1f33);">
+            <span class="badge mono">PRODUCTION</span>
+            <div class="mockbars"><div class="b short"></div><div class="card"></div></div>
+            <div class="mockbars"><div class="b short"></div><div class="card">
+              <a href="img/ax-rider.png" target="_blank"><img src="img/ax-rider.png" alt="Assured Xpress Rider"></a>
+            </div></div>
+          </div>
+          <div class="proj-body">
+            <h4>Assured Xpress Rider</h4>
+            <p>Courier & logistics app for riders — live map tracking, swipeable balance cards, push notifications and centralized error handling.</p>
+            <div class="proj-tags"><span class="tag">Flutter</span><span class="tag">BLoC</span><span class="tag">Google Maps</span><span class="tag">FCM</span></div>
+            <div class="proj-links"><a href="#">Playstore →</a><a href="#">AppStore →</a></div>
+          </div>
         </div>
-      </div>
-      <div class="highlight-list reveal">
-        <div class="highlight-card glass"><div class="ic">RT</div><div><h4>Real-time systems at scale</h4><p>Designed sealed-class event hierarchies over Ably WebSockets to drive live trivia sessions — timers, push questions, leaderboards — with payload normalization for resilience.</p></div></div>
-        <div class="highlight-card glass"><div class="ic">₦</div><div><h4>Fintech-grade payments</h4><p>Built end-to-end checkout flows with the Paystack SDK and BLoC, from ticket configuration through verification, handling edge cases other teams miss.</p></div></div>
-        <div class="highlight-card glass"><div class="ic">▶</div><div><h4>Live video, zero buffering anxiety</h4><p>Fixed HLS buffer residue on player init and built a retry/polling state machine around better_player, so a live stream always recovers gracefully.</p></div></div>
-        <div class="highlight-card glass"><div class="ic">UI</div><div><h4>Design-literate engineering</h4><p>Comfortable owning UI from concept to pixel — glassmorphic surfaces, custom painters, and staggered animations that feel premium, not generic.</p></div></div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<div class="wrap"><div class="divider"><span class="dot"></span></div></div>
-
-<!-- SKILLS -->
-<section id="skills">
-  <div class="wrap">
-    <div class="eyebrow reveal">02 · Skills</div>
-    <h2 class="sec-title reveal">A toolkit built for shipping, not<br>just demoing.</h2>
-    <p class="sec-sub reveal">Depth where it matters: state management, real-time infrastructure, and the unglamorous delivery pipeline that gets an app into someone's pocket.</p>
-
-    <div class="skill-groups" style="margin-top:50px;">
-      <div class="reveal">
-        <span class="skill-group-label">Core & Architecture</span>
-        <div class="skill-grid">
-          <div class="skill-card glass"><div class="sic">{ }</div><h4>Flutter</h4><p>Production apps across fintech, logistics & ed-tech, phone to tablet.</p></div>
-          <div class="skill-card glass"><div class="sic">Dart</div><h4>Dart</h4><p>Sealed classes, null-safety, async streams used deliberately.</p></div>
-          <div class="skill-card glass"><div class="sic">⚙</div><h4>BLoC</h4><p>Predictable state across complex, multi-screen real-time flows.</p></div>
-          <div class="skill-card glass"><div class="sic">▣</div><h4>Clean Architecture</h4><p>Single-responsibility widgets, decomposed and testable.</p></div>
-        </div>
-      </div>
-      <div class="reveal">
-        <span class="skill-group-label">Backend & Realtime</span>
-        <div class="skill-grid">
-          <div class="skill-card glass"><div class="sic">↻</div><h4>Firebase</h4><p>Auth, Firestore & FCM push notifications at scale.</p></div>
-          <div class="skill-card glass"><div class="sic">⇄</div><h4>REST APIs</h4><p>Centralized Dio interceptors with typed error handling.</p></div>
-          <div class="skill-card glass"><div class="sic">⚡</div><h4>Realtime & Streaming</h4><p>Ably WebSockets and HLS live video with retry logic.</p></div>
-          <div class="skill-card glass"><div class="sic">₦</div><h4>Payment Integration</h4><p>Paystack checkout flows wired through BLoC end-to-end.</p></div>
-        </div>
-      </div>
-      <div class="reveal">
-        <span class="skill-group-label">Delivery & Extras</span>
-        <div class="skill-grid">
-          <div class="skill-card glass"><div class="sic">▲</div><h4>CI/CD</h4><p>Automated build, test & release pipelines.</p></div>
-          <div class="skill-card glass"><div class="sic">⚙</div><h4>GitHub Actions</h4><p>Flavor-aware builds via --dart-define, single main.dart.</p></div>
-          <div class="skill-card glass"><div class="sic">▶</div><h4>3D & Spatial UI</h4><p>Matrix4 transforms, custom painters, early VR/AR exploration.</p></div>
-          <div class="skill-card glass"><div class="sic">⇪</div><h4>Play Store Deployment</h4><p>Release management, staged rollouts, crash triage.</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="wrap"><div class="divider"><span class="dot"></span></div></div>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="wrap">
-    <div class="eyebrow reveal">03 · Experience</div>
-    <h2 class="sec-title reveal">Four years, three industries,<br>one architecture discipline.</h2>
-
-    <div class="timeline">
-      <div class="tl-item reveal">
-        <div class="tl-dot"></div>
-        <div class="tl-card glass">
-          <div class="tl-top"><span class="tl-role">Mid-level Flutter Developer</span><span class="tl-period mono">2025 — Present</span></div>
-          <div class="tl-company">Liberty Assured <span class="industry">FINTECH / LOGISTICS</span></div>
-          <ul class="tl-bullets">
-            <li>Built and maintain Salary for Life (The Hustle) application — a live interactive trivia game show with real-time sessions, HLS streaming and in-app payments. In conjuction with the Nigeria Popular TV show Salary for Life</li>
-            <li>Designed sealed SessionEvent hierarchies over Ably WebSockets handling push questions, timers and session recaps with payload normalization.</li>
-            <li>Shipped AX Rider, a courier/logistics app with live Google Maps tracking, Firebase FCM, and a centralized Dio error-handling layer.</li>
-            <li>Replaced a third-party walkthrough package with a custom spotlight CustomPainter overlay, cutting an external dependency entirely.</li>
-          </ul>
-          <div class="tl-tags"><span class="tag">Flutter</span><span class="tag">BLoC</span><span class="tag">Ably</span><span class="tag">Paystack</span><span class="tag">Firebase FCM</span><span class="tag">go_router</span></div>
-        </div>
-      </div>
-
-      <div class="tl-item reveal">
-        <div class="tl-dot"></div>
-        <div class="tl-card glass">
-          <div class="tl-top"><span class="tl-role">Mobile App Developer</span><span class="tl-period mono">2023 — 2025</span></div>
-          <div class="tl-company">Glimere <span class="industry">FASHION TECH</span></div>
-          <ul class="tl-bullets">
-            <li>Built core e-commerce flows — catalog, cart, checkout — with smooth, brand-led motion design.</li>
-            <li>Implemented image-heavy product browsing optimized for low-bandwidth conditions.</li>
-            <li>Worked closely with design to translate fashion-forward mockups into pixel-accurate Flutter UI.</li>
-          </ul>
-          <div class="tl-tags"><span class="tag">Flutter</span><span class="tag">setState</span><span class="tag">REST APIs</span><span class="tag">Animations</span></div>
-        </div>
-      </div>
-
-      <div class="tl-item reveal">
-        <div class="tl-dot"></div>
-        <div class="tl-card glass">
-          <div class="tl-top"><span class="tl-role">Mobile App Developer</span><span class="tl-period mono">2021 — 2022</span></div>
-          <div class="tl-company">Smart Campus <span class="industry">ED-TECH</span></div>
-          <ul class="tl-bullets">
-            <li>Built student-facing modules for course tracking, timetables and campus announcements.</li>
-            <li>Introduced a centralized API error-handling pattern adopted across the codebase.</li>
-            <li>Owned UI for onboarding and notifications, focused on clarity for first-time smartphone users.</li>
-          </ul>
-          <div class="tl-tags"><span class="tag">Flutter</span><span class="tag">Firebase</span><span class="tag">Push Notifications</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="wrap"><div class="divider"><span class="dot"></span></div></div>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="wrap">
-    <div class="eyebrow reveal">04 · Projects</div>
-    <h2 class="sec-title reveal">Shipped products, not side projects.</h2>
-    <p class="sec-sub reveal">A selection of production apps — each one solving a real constraint, not a tutorial-sized problem.</p>
-
-    <div class="proj-grid">
-      <div class="proj-card glass reveal">
-        <div class="proj-thumb" style="background:linear-gradient(135deg,#02569B,#0a2540);">
-          <span class="badge mono">LIVE</span>
-          <div class="mockbars"><div class="b short"></div><div class="card"></div></div>
-          <div class="mockbars">
-            <div class="b short"></div><div class="card">
-              <a href="img/salary4life.png" target="_blank"><img src="img/salary4life.png" alt="Salary for Life (The Hustle)"></a>
+        <div class="proj-card glass reveal">
+          <div class="proj-thumb" style="background:linear-gradient(135deg,#0EA66B,#0a2418);">
+            <span class="badge mono">ED-TECH</span>
+            <div class="mockbars"><div class="b short"></div><div class="card"></div></div>
+            <div class="mockbars">
+              <div class="b short"></div>
+              <div class="card"><a href="img/smart-campus.png" target="_blank"><img src="img/smart-campus.png" alt="Smart Campus App"></a></div>
             </div>
           </div>
-        </div>
-        <div class="proj-body">
-          <h4>Salary for Life (The Hustle)</h4>
-          <p>Real-time interactive trivia game show with synchronized timers, live leaderboards, HLS streaming and Paystack-powered ticket payments.</p>
-          <div class="proj-tags"><span class="tag">Flutter</span><span class="tag">BLoC</span><span class="tag">Ably</span><span class="tag">Paystack</span><span class="tag">HLS</span></div>
-          <div class="proj-links"><a href="https://play.google.com/store/apps/details?id=com.salary4.life&pcampaignid=web_share" target="_blank">Playstore →</a><a href="#">AppStore →</a></div>
-        </div>
-      </div>
-
-      <div class="proj-card glass reveal">
-        <div class="proj-thumb" style="background:linear-gradient(135deg,#0175C2,#0a1f33);">
-          <span class="badge mono">PRODUCTION</span>
-          <div class="mockbars"><div class="b short"></div><div class="card"></div></div>
-          <div class="mockbars"><div class="b short"></div><div class="card">
-            <a href="img/ax-rider.png" target="_blank"><img src="img/ax-rider.png" alt="Assured Xpress Rider"></a>
-          </div></div>
-        </div>
-        <div class="proj-body">
-          <h4>Assured Xpress Rider</h4>
-          <p>Courier & logistics app for riders — live map tracking, swipeable balance cards, push notifications and centralized error handling.</p>
-          <div class="proj-tags"><span class="tag">Flutter</span><span class="tag">BLoC</span><span class="tag">Google Maps</span><span class="tag">FCM</span></div>
-          <div class="proj-links"><a href="#">Playstore →</a><a href="#">AppStore →</a></div>
-        </div>
-      </div>
-
-      <div class="proj-card glass reveal">
-        <div class="proj-thumb" style="background:linear-gradient(135deg,#0EA66B,#0a2418);">
-          <span class="badge mono">ED-TECH</span>
-          <div class="mockbars"><div class="b short"></div><div class="card"></div></div>
-          <div class="mockbars">
-            <div class="b short"></div>
-            <div class="card"><a href="img/smart-campus.png" target="_blank"><img src="img/smart-campus.png" alt="Smart Campus App"></a></div>
+          <div class="proj-body">
+            <h4>Smart Campus App</h4>
+            <p>Student companion app for timetables, announcements and course tracking, built for first-time smartphone users.</p>
+            <div class="proj-tags"><span class="tag">Flutter</span><span class="tag">Firebase</span><span class="tag">Push Notifications</span></div>
+            <div class="proj-links"><a href="#">GitHub →</a><a href="#">Live Demo →</a></div>
           </div>
         </div>
-        <div class="proj-body">
-          <h4>Smart Campus App</h4>
-          <p>Student companion app for timetables, announcements and course tracking, built for first-time smartphone users.</p>
-          <div class="proj-tags"><span class="tag">Flutter</span><span class="tag">Firebase</span><span class="tag">Push Notifications</span></div>
-          <div class="proj-links"><a href="#">GitHub →</a><a href="#">Live Demo →</a></div>
-        </div>
-      </div>
 
-      <div class="proj-card glass reveal">
-        <div class="proj-thumb" style="background:linear-gradient(135deg,#7A3CF0,#1c0d33);">
-          <span class="badge mono">FASHION</span>
-          <div class="mockbars">
-            <div class="b short"></div><div class="card"></div>
+        <div class="proj-card glass reveal">
+          <div class="proj-thumb" style="background:linear-gradient(135deg,#7A3CF0,#1c0d33);">
+            <span class="badge mono">FASHION</span>
+            <div class="mockbars">
+              <div class="b short"></div><div class="card"></div>
+            </div>
+          
           </div>
-         
+          <div class="proj-body">
+            <h4>Glimere E-Commerce App</h4>
+            <p>Catalog-to-checkout shopping experience with optimized image loading and brand-led micro-animations.</p>
+            <div class="proj-tags"><span class="tag">Flutter</span><span class="tag">REST APIs</span><span class="tag">Animations</span></div>
+            <div class="proj-links"><a href="#">GitHub →</a><a href="#">Live Demo →</a></div>
+          </div>
         </div>
-        <div class="proj-body">
-          <h4>Glimere E-Commerce App</h4>
-          <p>Catalog-to-checkout shopping experience with optimized image loading and brand-led micro-animations.</p>
-          <div class="proj-tags"><span class="tag">Flutter</span><span class="tag">REST APIs</span><span class="tag">Animations</span></div>
-          <div class="proj-links"><a href="#">GitHub →</a><a href="#">Live Demo →</a></div>
-        </div>
-      </div>
 
-      <div class="proj-card glass reveal">
-        <div class="proj-thumb" style="background:linear-gradient(135deg,#22D3EE,#073240);">
-          <span class="badge mono">REAL-TIME</span>
-          <div class="mockbars"><div class="b short"></div><div class="card"></div></div>
+        <div class="proj-card glass reveal">
+          <div class="proj-thumb" style="background:linear-gradient(135deg,#22D3EE,#073240);">
+            <span class="badge mono">REAL-TIME</span>
+            <div class="mockbars"><div class="b short"></div><div class="card"></div></div>
+          </div>
+          <div class="proj-body">
+            <h4>Wanna Chat Application</h4>
+            <p>Community chat with image sharing, reaction chips, host badges and an animated modal-driven UX.</p>
+            <div class="proj-tags"><span class="tag">Flutter</span><span class="tag">BLoC</span><span class="tag">image_picker</span></div>
+            <div class="proj-links"><a href="#">GitHub →</a><a href="#">Live Demo →</a></div>
+          </div>
         </div>
-        <div class="proj-body">
-          <h4>Wanna Chat Application</h4>
-          <p>Community chat with image sharing, reaction chips, host badges and an animated modal-driven UX.</p>
-          <div class="proj-tags"><span class="tag">Flutter</span><span class="tag">BLoC</span><span class="tag">image_picker</span></div>
-          <div class="proj-links"><a href="#">GitHub →</a><a href="#">Live Demo →</a></div>
-        </div>
-      </div>
 
-      <div class="proj-card glass reveal">
-        <div class="proj-thumb" style="background:linear-gradient(135deg,#02569B,#0175C2);">
-          <span class="badge mono">GAME</span>
-          <div class="mockbars"><div class="b short"></div><div class="card"></div></div>
-        </div>
-        <div class="proj-body">
-          <h4>Trivia Game Application</h4>
-          <p>Layered-stack answer tiles with vote-fill effects, card-flip transitions, and a five-controller cosmic loading animation.</p>
-          <div class="proj-tags"><span class="tag">Flutter</span><span class="tag">CustomPainter</span><span class="tag">Animations</span></div>
-          <div class="proj-links"><a href="#">GitHub →</a><a href="#">Live Demo →</a></div>
+        <div class="proj-card glass reveal">
+          <div class="proj-thumb" style="background:linear-gradient(135deg,#02569B,#0175C2);">
+            <span class="badge mono">GAME</span>
+            <div class="mockbars"><div class="b short"></div><div class="card"></div></div>
+          </div>
+          <div class="proj-body">
+            <h4>Trivia Game Application</h4>
+            <p>Layered-stack answer tiles with vote-fill effects, card-flip transitions, and a five-controller cosmic loading animation.</p>
+            <div class="proj-tags"><span class="tag">Flutter</span><span class="tag">CustomPainter</span><span class="tag">Animations</span></div>
+            <div class="proj-links"><a href="#">GitHub →</a><a href="#">Live Demo →</a></div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<div class="wrap"><div class="divider"><span class="dot"></span></div></div>
+  <div class="wrap"><div class="divider"><span class="dot"></span></div></div>
 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="wrap">
-    <div class="eyebrow reveal">05 · Contact</div>
-    <h2 class="sec-title reveal">Building something real-time?<br>Let's talk.</h2>
-    <p class="sec-sub reveal">Open to Flutter roles, fintech/realtime architecture work, and early conversations around VR/AR products.</p>
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="eyebrow reveal">05 · Contact</div>
+      <h2 class="sec-title reveal">Building something real-time?<br>Let's talk.</h2>
+      <p class="sec-sub reveal">Open to Flutter roles, fintech/realtime architecture work, and early conversations around VR/AR products.</p>
 
-    <div class="contact-grid" style="margin-top:50px;">
-      <form class="contact-card glass reveal" id="contactForm">
-        <div class="field"><label>Name</label><input type="text" required placeholder="Your full name"></div>
-        <div class="field"><label>Email</label><input type="email" required placeholder="you@email.com"></div>
-        <div class="field"><label>Message</label><textarea required placeholder="Tell me about the role or project..."></textarea></div>
-        <button type="submit" class="btn btn-primary btn-send magnetic">Send Message →</button>
-        <div class="form-status" id="formStatus"></div>
-      </form>
+      <div class="contact-grid" style="margin-top:50px;">
+        <form class="contact-card glass reveal" id="contactForm">
+          <div class="field"><label>Name</label><input type="text" required placeholder="Your full name"></div>
+          <div class="field"><label>Email</label><input type="email" required placeholder="you@email.com"></div>
+          <div class="field"><label>Message</label><textarea required placeholder="Tell me about the role or project..."></textarea></div>
+          <button type="submit" class="btn btn-primary btn-send magnetic">Send Message →</button>
+          <div class="form-status" id="formStatus"></div>
+        </form>
 
-      <div class="contact-side reveal">
-        <a href="mailto:moyinolatheo@gmail.com" class="contact-link glass"><div class="ic">@</div><div class="meta"><b>Email</b><span>moyinolatheo@gmail.com</span></div></a>
-        <a href="https://www.linkedin.com/in/moyinoluwa-olatona/" target="_blank" class="contact-link glass"><div class="ic">in</div><div class="meta"><b>LinkedIn</b><span>/in/moyinoluwa-olatona</span></div></a>
-        <a href="https://github.com/DartMaskedGuy" target="_blank" class="contact-link glass"><div class="ic">gh</div><div class="meta"><b>GitHub</b><span>github.com/DartMaskedGuy</span></div></a>
-        <a href="https://x.com/DartMaskedGuy" target="_blank" class="contact-link glass"><div class="ic">𝕏</div><div class="meta"><b>X (Twitter)</b><span>@DartMaskedGuy</span></div></a>
+        <div class="contact-side reveal">
+          <a href="mailto:moyinolatheo@gmail.com" class="contact-link glass"><div class="ic"><i class="bi bi-envelope"></i></div><div class="meta"><b>Email</b><span>moyinolatheo@gmail.com</span></div></a>
+          <a href="https://api.whatsapp.com/send?phone=2349135781111" target="_blank" class="contact-link glass"><div class="ic"> <i class="bi bi-whatsapp"></i></div><div class="meta"><b>Whatsapp</b><span>@DartMaskedGuy</span></div></a>
+          <a href="https://www.linkedin.com/in/moyinoluwa-olatona/" target="_blank" class="contact-link glass"><div class="ic"><i class="bi bi-linkedin"></i></div><div class="meta"><b>LinkedIn</b><span>/in/moyinoluwa-olatona</span></div></a>
+          <a href="https://github.com/DartMaskedGuy" target="_blank" class="contact-link glass"><div class="ic"><i class="bi bi-github"></i></div><div class="meta"><b>GitHub</b><span>github.com/DartMaskedGuy</span></div></a>
+          <a href="https://x.com/DartMaskedGuy" target="_blank" class="contact-link glass"><div class="ic">𝕏</div><div class="meta"><b>X (Twitter)</b><span>@DartMaskedGuy</span></div></a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-</main>
+  </main>
 
-<footer>
-  <div class="wrap footer-inner">
-    <p>&copy; 2026 DartMaskedGuy. Built with Flutter-grade attention to detail.</p>
-    <p>Designed & coded with glassmorphism, GSAP & a lot of backdrop-filter.</p>
-  </div>
-</footer>
+  <footer>
+    <div class="wrap footer-inner">
+      <p>&copy; 2026 DartMaskedGuy. Built with Flutter-grade attention to detail.</p>
+      <p>Designed & coded with glassmorphism, GSAP & a lot of backdrop-filter.</p>
+    </div>
+  </footer>
 
-<button id="backToTop" class="glass" aria-label="Back to top">↑</button>
-<script src="js/script.js"></script>
-</body>
+  <button id="backToTop" class="glass" aria-label="Back to top">↑</button>
+  <script src="js/script.js"></script>
+  </body>
 </html>
