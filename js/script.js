@@ -43,7 +43,7 @@ document.getElementById('contactForm').addEventListener('submit', (e) => {
 });
 
 /* ============================= TYPEWRITER ============================= */
-const roles = ['Flutter Developer.', 'Mobile Architect.', 'Fintech Engineer.', 'VR/AR Enthusiast.'];
+const roles = ['Flutter Developer.', 'Cross Platform Developer.', 'Mobile Architect.', 'Fintech Engineer.', 'VR/AR Enthusiast.'];
 const twEl = document.getElementById('typewriter');
 let rIdx = 0, cIdx = 0, deleting = false;
 function typeLoop(){
