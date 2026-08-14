@@ -43,7 +43,7 @@ mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => 
 // });
 
 /* ============================= TYPEWRITER ============================= */
-const roles = ['Flutter Developer.', 'Cross Platform Developer.', 'Mobile Architect.', 'Fintech Engineer.', 'VR/AR Enthusiast.'];
+const roles = ['Flutter Developer.', 'Cross Platform App Developer.', 'Mobile Architect.', 'Fintech Engineer.', 'VR/AR Enthusiast.'];
 const twEl = document.getElementById('typewriter');
 let rIdx = 0, cIdx = 0, deleting = false;
 function typeLoop(){
